@@ -1,14 +1,8 @@
-import axios from 'axios';
+import axios from "axios";
 
-const apiClient = axios.create({
-  baseURL: 'http://localhost:3000',
-  headers: {
-    'Content-Type': 'application/json'
-  }
-});
+const API_URL = "http://localhost:3000/products";
 
-export default {
-  getProducts() {
-    return apiClient.get('/products');
-  }
-};
+export async function fetchProducts() {
+  const response = await axios.get(API_URL);
+  return response.data;
+}

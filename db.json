@@ -1,0 +1,32 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Buku Panduan Belajar",
+      "description": "Buku lengkap untuk menunjang pembelajaran.",
+      "price": 75000,
+      "image": "https://via.placeholder.com/90x90?text=Buku"
+    },
+    {
+      "id": 2,
+      "name": "Video Tutorial Premium",
+      "description": "Akses video eksklusif dari para ahli.",
+      "price": 120000,
+      "image": "https://via.placeholder.com/90x90?text=Video"
+    },
+    {
+      "id": 3,
+      "name": "Membership Komunitas",
+      "description": "Gabung komunitas belajar dan diskusi.",
+      "price": 50000,
+      "image": "https://via.placeholder.com/90x90?text=Member"
+    },
+    {
+      "id": 4,
+      "name": "Webinar Eksklusif",
+      "description": "Ikuti webinar dengan topik menarik setiap bulan.",
+      "price": 100000,
+      "image": "https://via.placeholder.com/90x90?text=Webinar"
+    }
+  ]
+} 
