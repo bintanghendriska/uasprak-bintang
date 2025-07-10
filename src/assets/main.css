@@ -1,0 +1,15 @@
+/* src/assets/main.css */
+@import './base.css'; /* Ini mungkin sudah ada dari template Vue */
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  background-color: #f4f7f6;
+  color: #333;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  font-weight: normal;
+}
