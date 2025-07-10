@@ -1,25 +1,9 @@
 <script setup>
-import { ref, watchEffect } from "vue";
-import Navbar from "./components/Navbar.vue";
-import { useRoute } from "vue-router";
-
-const isLoggedIn = ref(localStorage.getItem("isLoggedIn") === "true");
-const route = useRoute();
-
-watchEffect(() => {
-  isLoggedIn.value = localStorage.getItem("isLoggedIn") === "true";
-});
-
-function handleLoginSuccess() {
-  isLoggedIn.value = true;
-}
+import MainLayout from "./layouts/MainLayout.vue";
 </script>
 
 <template>
-  <Navbar v-if="isLoggedIn && route.path !== '/login'" />
-  <main>
-    <RouterView @login-success="handleLoginSuccess" />
-  </main>
+  <MainLayout />
 </template>
 
 <style scoped>
